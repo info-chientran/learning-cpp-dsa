@@ -4,11 +4,9 @@
 using namespace std;
 
 void printQ(queue<int> list) {
-    queue<int> myList = list;
-
-    while (!myList.empty()) {
-        cout << myList.front() << " ";
-        myList.pop();
+    while (!list.empty()) {
+        cout << list.front() << " ";
+        list.pop();
     }
 
     cout << endl;
